@@ -6,8 +6,7 @@
   "company" : "Elastic",
   "title" : "Software / Support Engineer",
   "twitter" : "@pickypg",
-  "github" : "pickypg",
-  "
+  "github" : "pickypg"
 }
 ```
 
