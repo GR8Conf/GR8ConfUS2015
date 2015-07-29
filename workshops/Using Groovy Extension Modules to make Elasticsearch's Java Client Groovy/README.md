@@ -13,7 +13,7 @@
 ## Description
 
 This workshop will briefly describe the history of the official
-[https://github.com/elastic/elasticsearch-groovy](Elasticsearch Groovy client)
+[Elasticsearch Groovy client](https://github.com/elastic/elasticsearch-groovy)
 and why it made the decisions that it made.
 
 In doing so, it will transition into a hands-on workshop to working with
