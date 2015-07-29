@@ -1,0 +1,25 @@
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+mainClassName = "org.gr8conf.elasticsearch.ElasticsearchGroovyWorkshop"
+
+dependencies {
+  compile "org.codehaus.groovy:groovy-all:2.4.4:indy",
+          "org.elasticsearch:elasticsearch-groovy:1.7.0"
+
+  runtime "log4j:log4j:1.2.17"
+}
+
+repositories {
+  mavenCentral()
+}
+
+/**
+ * Configure Groovy compilation.
+ */
+tasks.withType(GroovyCompile) {
+  // Enable the usage of invokedynamic instructions in compiled Groovy code
+  // NOTE: This requires the "indy" version of the Groovy jar to take effect _and_ this is the reason that Java 7u60
+  //  or later is required by the Groovy client.
+  groovyOptions.optimizationOptions.indy = true
+}
