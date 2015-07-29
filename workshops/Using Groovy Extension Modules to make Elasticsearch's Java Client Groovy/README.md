@@ -41,44 +41,15 @@ through an entire index (or indices).
     * Gradle is the easiest way (also supplied in this directory)
     * GroovyShell is also possible if you prefer using `@Grab`
 * Preferred editor ([IntelliJ will be used](https://www.jetbrains.com/idea/))
+* Checkout this directory
 
-### Gradle
+### Directory Structure
 
-If you choose to use Gradle, then you can get started with this build script.
-
-```gradle
-apply plugin: 'groovy'
-apply plugin: 'application'
-
-mainClassName = "org.gr8conf.elasticsearch.ElasticsearchGroovyWorkshop"
-
-dependencies {
-  compile "org.codehaus.groovy:groovy-all:2.4.4:indy",
-          "org.elasticsearch:elasticsearch-groovy:1.7.0"
-
-  runtime "log4j:log4j:1.2.17"
-}
-
-repositories {
-  mavenCentral()
-}
-
-/**
- * Configure Groovy compilation.
- */
-tasks.withType(GroovyCompile) {
-  // Enable the usage of invokedynamic instructions in compiled Groovy code
-  // NOTE: This requires the "indy" version of the Groovy jar to take effect _and_ this is the reason that Java 7u60
-  //  or later is required by the Groovy client.
-  groovyOptions.optimizationOptions.indy = true
-}
-```
-
-Save this as `build.gradle` in your coding directory, which should look like this
-(you can also just copy this directory to get it):
+This directory has the following structure to start with.
 
 ```
 build.gradle
+settings.gradle
 src/
   main/
     groovy/
