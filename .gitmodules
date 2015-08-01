@@ -1,3 +1,9 @@
 [submodule "workshops/hands-on-ratpack"]
 	path = workshops/hands-on-ratpack
 	url = https://github.com/rhart/hands-on-ratpack
+[submodule "presentations/angular-groovy-world"]
+	path = presentations/angular-groovy-world
+	url = https://github.com/craigburke/angular-groovy-world.git
+[submodule "presentations/practical-groovy-dsl"]
+	path = presentations/practical-groovy-dsl
+	url = https://github.com/craigburke/practical-groovy-dsl.git
